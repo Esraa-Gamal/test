@@ -7,10 +7,16 @@ namespace GradBOOK
     {
         static void Main(string[] args)
         {
-            var book =new Book("Esraa");
+            var book =new Book();
             book.AddGrade(55.3);
             book.AddGrade(13.5);
-            book.ShowStatistics();   
+            var status = book.GetStatistics();
+
+            Console.WriteLine($"Average= {status.Average:N3}");
+            System.Console.WriteLine($"The highest={status.High}");
+            System.Console.WriteLine($"The Lowest={status.Low}");
+
+          
         }
     }
 }
