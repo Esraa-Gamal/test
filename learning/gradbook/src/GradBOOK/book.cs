@@ -6,9 +6,10 @@ namespace GradBOOK
 public class Book
 
 {
-    public Book()
+    public Book(string name)
     {
         grades=new List<double>();
+            Name = name;
        
     }
     
@@ -22,14 +23,13 @@ public class Book
 
     public Statistics GetStatistics()
     {
-            var grades = new List<double>() { 12.9, 45.657, 36.298, 22.5 };
+           // var grades = new List<double>() { 12.9, 45.657, 36.298, 22.5 };
             grades.Add(12.6);
-
-
             var result = new Statistics();
             result.Average = 0.0;
             result.High = double.MinValue;
             result.Low = double.MaxValue;
+
             foreach (var grade in grades)
             {
                 result.High = Math.Max(grade, result.High);
@@ -42,7 +42,9 @@ public class Book
           
         }
 
-        public  List <double> grades;
+        private  List <double> grades;
+        public string Name;
+         
 
 }
 }

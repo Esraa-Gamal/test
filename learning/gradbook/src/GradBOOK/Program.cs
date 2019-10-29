@@ -7,7 +7,7 @@ namespace GradBOOK
     {
         static void Main(string[] args)
         {
-            var book =new Book();
+            var book =new Book("");
             book.AddGrade(55.3);
             book.AddGrade(13.5);
             var status = book.GetStatistics();
