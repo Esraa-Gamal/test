@@ -90,7 +90,7 @@ public class Book
                     result.letter = 'C';
                     break; 
                 case var d when d >= 60.0:
-                    result.letter = 'D'
+                    result.letter = 'D';
                     break;
                 default:
                     result.letter = 'F';
