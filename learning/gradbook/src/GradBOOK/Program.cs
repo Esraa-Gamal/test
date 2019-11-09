@@ -8,13 +8,44 @@ namespace GradBOOK
         static void Main(string[] args)
         {
             var book =new Book("");
-            book.AddGrade(55.3);
-            book.AddGrade(13.5);
-            var status = book.GetStatistics();
 
-            Console.WriteLine($"Average= {status.Average:N3}");
-            System.Console.WriteLine($"The highest={status.High}");
-            System.Console.WriteLine($"The Lowest={status.Low}");
+            while(true)
+            {
+                Console.WriteLine("Enter a grade or 'q' to quit");
+                var input = Console.ReadLine();
+                if (input=="q")
+                {           
+                    break;
+                }
+
+                try
+                {
+                    var grade = double.Parse(input);
+                    book.AddGrade(grade);
+                }
+                catch(ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
+                catch(FormatException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("*****");
+                }
+
+               
+            }
+
+            var stats = book.GetStatistics();
+
+            Console.WriteLine($"Average= {stats.Average:N3}");
+            Console.WriteLine($"The highest={stats.High}");
+            Console.WriteLine($"The Lowest={stats.Low}");
+            Console.WriteLine($"The grade letter is {stats.letter}");
 
           
         }
