@@ -8,8 +8,13 @@ namespace GradBOOK
         static void Main(string[] args)
         {
             var book =new Book("");
+            book.GradeAdded += onGradAdded;
+            book.GradeAdded += onGradAdded;
+            book.GradeAdded -= onGradAdded;
+            book.GradeAdded += onGradAdded;
 
-            while(true)
+
+            while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit");
                 var input = Console.ReadLine();
@@ -41,13 +46,20 @@ namespace GradBOOK
             }
 
             var stats = book.GetStatistics();
+            
 
+            Console.WriteLine(Book.CATEGORY);
+            Console.WriteLine($"For The book named{book.Name}");
             Console.WriteLine($"Average= {stats.Average:N3}");
             Console.WriteLine($"The highest={stats.High}");
             Console.WriteLine($"The Lowest={stats.Low}");
             Console.WriteLine($"The grade letter is {stats.letter}");
 
           
+        }
+        static void onGradAdded(object sender, EventArgs e)
+        {
+            Console.WriteLine("The Grade Is Added");
         }
     }
 }
