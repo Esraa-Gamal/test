@@ -15,7 +15,6 @@ C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\bin\Debug\netcoreapp3.0\Grad
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\bin\Debug\netcoreapp3.0\GradBOOK.runtimeconfig.dev.json
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\bin\Debug\netcoreapp3.0\GradBOOK.dll
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\bin\Debug\netcoreapp3.0\GradBOOK.pdb
-C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\obj\Debug\netcoreapp3.0\GradBOOK.csprojAssemblyReference.cache
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\obj\Debug\netcoreapp3.0\GradBOOK.AssemblyInfoInputs.cache
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\obj\Debug\netcoreapp3.0\GradBOOK.AssemblyInfo.cs
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\obj\Debug\netcoreapp3.0\GradBOOK.dll
@@ -30,3 +29,4 @@ C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\
 C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\GradBOOK.AssemblyInfo.cs
 C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\GradBOOK.dll
 C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\GradBOOK.pdb
+C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\obj\Debug\netcoreapp3.0\GradBOOK.csprojAssemblyReference.cache

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj": {}
+    "C:\\Users\\t-egamal\\C#\\learning\\gradbook\\src\\GradBOOK\\GradBOOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj": {
+    "C:\\Users\\t-egamal\\C#\\learning\\gradbook\\src\\GradBOOK\\GradBOOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj",
+        "projectUniqueName": "C:\\Users\\t-egamal\\C#\\learning\\gradbook\\src\\GradBOOK\\GradBOOK.csproj",
         "projectName": "GradBOOK",
-        "projectPath": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj",
-        "packagesPath": "C:\\Users\\EsraaGamal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\obj\\",
+        "projectPath": "C:\\Users\\t-egamal\\C#\\learning\\gradbook\\src\\GradBOOK\\GradBOOK.csproj",
+        "packagesPath": "C:\\Users\\t-egamal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t-egamal\\C#\\learning\\gradbook\\src\\GradBOOK\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\EsraaGamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\t-egamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -11,7 +11,7 @@ namespace GradeBook.Tests
         public void BookCalculatesAveragegrade()
         {
             #region Arrange Section
-            var book =new Book("");
+            var book =new InMemoryBook("");
             book.AddGrade(98.2);
             #endregion
 

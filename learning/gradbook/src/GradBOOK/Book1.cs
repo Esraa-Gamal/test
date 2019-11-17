@@ -1,19 +1,75 @@
 using System.Collections.Generic;
 using System;
+using System.IO;
 
 namespace GradBOOK
 {
 
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
-    public class Book
+    public class NamedObject
+    {
+
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStatistics();
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
+
+    public abstract class Book : NamedObject, IBook
+    {
+        public Book(string name) : base(name)
+        {
+        }
+
+        public virtual event GradeAddedDelegate GradeAdded;
+
+        public abstract void AddGrade(double grade);
+
+        public abstract Statistics GetStatistics();
+      
+    }
+    public class DiskBook : Book
+    {
+        public DiskBook (string name): base(name)
+        {
+
+        }
+
+        public override event GradeAddedDelegate GradeAdded;
+        public override void AddGrade(double grade)
+        {
+           var writer= File.AppendText($"{Name}.txt");
+            writer.WriteLine(grade);
+        }
+
+        public override Statistics GetStatistics()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public class InMemoryBook : Book
 
     {
-        public Book(string name)
+        public InMemoryBook(string name) : base(name)
         {
+         
             grades=new List<double>();
             Name = name;
-       
+        
         }
 
         public void AddLetterGrade(char letter)
@@ -40,7 +96,7 @@ namespace GradBOOK
     
 
 
-        public void AddGrade(double grade)
+        public override void AddGrade(double grade)
         {
 
             if (grade <= 100 && grade >= 0)
@@ -58,11 +114,11 @@ namespace GradBOOK
             }
         
         }
-        public event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate GradeAdded;
 
   
 
-        public Statistics GetStatistics()
+        public override Statistics GetStatistics()
         {
                // var grades = new List<double>() { 12.9, 45.657, 36.298, 22.5 };
                 grades.Add(12.6);
@@ -113,7 +169,7 @@ namespace GradBOOK
 
             private  List <double> grades;
 
-            public string Name
+          /*  public string Name
             {
                 //The Auto property in C#
                  get; 
