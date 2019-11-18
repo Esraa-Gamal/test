@@ -52,8 +52,15 @@ namespace GradBOOK
         public override event GradeAddedDelegate GradeAdded;
         public override void AddGrade(double grade)
         {
-           var writer= File.AppendText($"{Name}.txt");
-            writer.WriteLine(grade);
+            using (var writer = File.AppendText($"{Name}.txt"))
+            {
+                writer.WriteLine(grade);
+                if (GradeAdded != null)
+                {
+                  
+                }
+            }
+                
         }
 
         public override Statistics GetStatistics()
