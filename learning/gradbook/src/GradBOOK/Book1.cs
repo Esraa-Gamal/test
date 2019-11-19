@@ -46,7 +46,6 @@ namespace GradBOOK
     {
         public DiskBook (string name): base(name)
         {
-
         }
 
         public override event GradeAddedDelegate GradeAdded;

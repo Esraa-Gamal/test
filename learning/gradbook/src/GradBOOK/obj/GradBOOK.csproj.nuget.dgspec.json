@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\gradbook\\GradBOOK.csproj": {}
+    "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\gradbook\\GradBOOK.csproj": {
+    "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\gradbook\\GradBOOK.csproj",
+        "projectUniqueName": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj",
         "projectName": "GradBOOK",
-        "projectPath": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\gradbook\\GradBOOK.csproj",
+        "projectPath": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\GradBOOK.csproj",
         "packagesPath": "C:\\Users\\EsraaGamal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\gradbook\\obj\\",
+        "outputPath": "C:\\Users\\EsraaGamal\\test\\learning\\gradbook\\src\\GradBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EsraaGamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
