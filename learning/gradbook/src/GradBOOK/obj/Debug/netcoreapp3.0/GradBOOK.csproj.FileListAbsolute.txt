@@ -30,3 +30,4 @@ C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\
 C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\GradBOOK.dll
 C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\GradBOOK.pdb
 C:\Users\t-egamal\C#\learning\gradbook\src\GradBOOK\obj\Debug\netcoreapp3.0\GradBOOK.csprojAssemblyReference.cache
+C:\Users\EsraaGamal\test\learning\gradbook\src\GradBook\obj\Debug\netcoreapp3.0\GradBOOK.csprojAssemblyReference.cache

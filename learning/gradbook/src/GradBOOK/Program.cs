@@ -14,15 +14,12 @@ namespace GradBOOK
 
             var stats = book.GetStatistics();
 
-
             Console.WriteLine(InMemoryBook.CATEGORY);
-            Console.WriteLine($"For The book named{book.Name}");
+            Console.WriteLine($"For The book named {book.Name}");
             Console.WriteLine($"Average= {stats.Average:N3}");
             Console.WriteLine($"The highest={stats.High}");
             Console.WriteLine($"The Lowest={stats.Low}");
-            Console.WriteLine($"The grade letter is {stats.letter}");
-
-
+            Console.WriteLine($"The grade letter is {stats.Letter}");
         }
 
         private static void EnterGrades(IBook book)
